@@ -1,0 +1,19 @@
+{
+  "name": "parcel-svelte-monaco-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html src/editor/*",
+    "watch": "parcel watch src/index.html src/editor/*",
+    "build": "parcel build src/index.html src/editor/*"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "monaco-editor": "^0.20.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-svelte": "^4.0.6",
+    "svelte": "^3.21.0"
+  }
+}
