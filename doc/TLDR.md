@@ -1,11 +1,6 @@
-# [monaco-editor] using [parceljs]
+# Too Long, Didn't Read
 
-This is a sample showing using [monaco-editor] with [parceljs]
-that happens to use [svelte].
-
-## Too Long, Didn't Read
-
-The [tutorial](./doc/tutorial.md) has more detailed info...
+The [tutorial](./tutorial.md) has more detailed info...
 
 Basic svelte app with html, index.js script to bootstrap, and one component.
 
@@ -61,7 +56,7 @@ import 'monaco-editor/esm/vs/editor/editor.worker.js'
 
 Edit the scripts in package.json to tell parcel to use everything
 in the 'src/editor' directory as an entry point, this will create
-separate files for the workers and the index file that will have
+separate fields for the workers and the index file that will have
 the editor.
 
 ```json
@@ -127,34 +122,3 @@ event in `App.svelte`:
 </div>
 ```
 
-
-## Why?
-
-Trying to write a chrome extension with multiple pages and different
-scripts and css for things like options, page overrides, popup,
-backgrouind, and content scripts was a pain until I
-fouind [parceljs].  There is zero configuration, you just pass
-the files you want and it uses each one as an entry point and
-creates the files in the dist directory.  There's a [parcel-plugin-web-extension]
-for extension manifests so you only have to specify the manifest and
-it will find all the scripts, pages, and css (or scss) files in
-the manifest and process them all.  Beautiful...
-
-In the extension I wanted to allow the user to create and edit scripts
-and style overrides for any web page, so I thought I'd check out [monaco-editor].
-Their [monaco parceljs example] left something to be desired, I really
-didn't want to have to have a separate step in my build process running
-a bash script to create the workers.
-
-I wanted to check out [svelte] to evaluate it and I'm liking it.
-Their [tutorial] is awesome and has a [repl] where you can create
-and save projects with multiple files, a really nice svelte version
-of jsfiddle or codepen.
-
-[monaco-editor]: https://microsoft.github.io/monaco-editor/
-[svelte]: https://svelte.dev/
-[parceljs]: https://parceljs.org/
-[parcel-plugin-web-extension]: https://www.npmjs.com/package/parcel-plugin-web-extension
-[tutorial]: https://svelte.dev/tutorial/basics
-[repl]: https://svelte.dev/repl/hello-world?version=3.21.0
-[monaco parceljs example]: https://github.com/microsoft/monaco-editor/blob/master/docs/integrate-esm.md

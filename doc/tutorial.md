@@ -299,6 +299,19 @@ import { editor as monacoEditor } from 'monaco-editor'
 export default monacoEditor;
 ```
 
+Final folder layout:
+
+```text
+|--- src
+|    |--- editor
+|    |    |--- index.js
+|    |    |--- ts.worker.js
+|    |    |--- editor.worker.js
+|    |--- index.html
+|    |--- index.js
+|    |--- App.svelte
+```
+
 ### Done
 
 Refresh the page and there will be no errors and the typescript functionality will work as expected.
